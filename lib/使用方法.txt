@@ -1,0 +1,17 @@
+导入substance.jar包 然后在mian下面加入以下代码运行可看效果
+ // 设置外观感觉
+        JFrame.setDefaultLookAndFeelDecorated(true);
+        JDialog.setDefaultLookAndFeelDecorated(true);
+        try
+        {
+            UIManager.setLookAndFeel(UIManager
+                    .getCrossPlatformLookAndFeelClassName());
+            UIManager
+                    .setLookAndFeel(new SubstanceBusinessBlackSteelLookAndFeel());
+            // UIManager.setLookAndFeel(new SubstanceBusinessLookAndFeel());
+
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
